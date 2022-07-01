@@ -8,38 +8,52 @@ public class StreamTaskTest {
     @DataProvider(name = "numbers")
     public static Object[][] numbers() {
         return new Object[][]{
-                {
-                        new int[]{1, 2, 3, 4, 5},
-                        20
-                },
-                {
-                        new int[]{-5, -4, 11, 6, 5},
-                        52
-                },
-                {
-                        new int[]{13, -2, 33, -4, 5},
-                        20
-                }
-                // TODO add 2 more test data here
+            {
+              new int[]{1, 2, 3, 4, 5},
+                20
+            },
+            {
+              new int[]{-5, -4, 11, 6, 5},
+                52
+            },
+            {
+              new int[]{13, -2, 33, -4, 5},
+                20
+            },
+            {
+              new int[]{5, 4, 3, 2, 1},
+                20
+            },
+            {
+              new int[]{0, 5, 7, 0, 13},
+                0
+            }
         };
     }
 
     @DataProvider(name = "arrays")
     public static Object[][] arrays() {
         return new Object[][]{
-                {
-                        new int[]{1, 4, 3, 5, 2},
-                        new int[]{1, 3, 5}
-                },
-                {
-                        new int[]{5, -3, 11, -5},
-                        new int[]{-5, -3, 5, 11}
-                },
-                {
-                        new int[]{130, -200, 330, -40, 50, 66},
-                        new int[]{}
-                }
-                // TODO add 2 more test data here
+            {
+              new int[]{1, 4, 3, 5, 2},
+                new int[]{1, 3, 5}
+            },
+            {
+              new int[]{5, -3, 11, -5},
+                new int[]{-5, -3, 5, 11}
+            },
+            {
+              new int[]{130, -200, 330, -40, 50, 66},
+                new int[]{}
+            },
+            {
+              new int[]{13, -2, 33, -4, 5},
+                new int[]{5, 13, 33}
+            },
+            {
+              new int[]{-5, -4, 11, 6, 5},
+                new int[]{-5, 5, 11}
+            }
         };
     }
 
